@@ -1,7 +1,7 @@
 # keras_timeseries
 
 ## Summary
-In this exercise, we recreate an example by Jason Brownlee. Somethings were modified:
+In this exercise, we recreate an <a href="http://machinelearningmastery.com/time-series-prediction-with-deep-learning-in-python-with-keras/"> example </a>by Jason Brownlee. Somethings were modified:
 
 1. The docstrings have been expanded to provide explanations (including relevant URLs) of the arguments to the keras functions.
 2. The file is now intended to run using a terminal command incorporating the click package; http://click.pocoo.org/.
