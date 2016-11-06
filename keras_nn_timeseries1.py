@@ -1,6 +1,11 @@
 # Fit a shallow nueral network with 1 input, 1 hidden layer with 8 neurons, and an output layer.
 # A time series problem is converted into a regression problem by fitting:
 #  y(t) to [y(t-1) ... y(t-lag)]
+
+# Data:
+# International airline passengers: monthly totals in thousands. Jan 49 – Dec 60
+# https://datamarket.com/data/set/22u3/
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -90,7 +95,7 @@ def main(lag):
 	plt.plot(trainPredictPlot, label = 'predictd training set')
 	plt.plot(testPredictPlot, label = 'predicted test set')
 	plt.ylabel('# of international airline passengers', fontsize=16)
-	plt.xlabel('# of months from Jan 49 – Dec 60', fontsize=16)
+	plt.xlabel('# of months from Jan 1949 – Dec 1960', fontsize=16)
 	plt.title('Using the last {} lags as predictor(s)'.format(lag), fontsize=16)
 	plt.legend(loc="upper left")
 	plt.savefig('lag{}.png'.format(lag))
